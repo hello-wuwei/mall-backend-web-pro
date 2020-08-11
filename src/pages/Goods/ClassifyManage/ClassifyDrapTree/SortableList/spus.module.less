@@ -1,0 +1,35 @@
+.spus{
+  :global{
+    li{
+      div.group-parent-node{
+        display: flex;
+        line-height: 54px;
+        border-bottom: 1px solid #ccc;
+        div.name{
+          box-sizing: border-box;
+          width: 160px;
+          text-align: initial;
+          flex: none;
+          .empty-allow{
+            display: inline-block;
+            width: 28px;
+          }
+        }
+        div{
+          text-align: center;
+          flex: 1
+        }
+      }
+      .group-children-node{
+        transition: max-height .5s ease-in-out;
+        overflow: hidden;
+      }
+      // .opened{
+      //   max-height: 1000px
+      // }
+      .closed{
+        max-height: 0px !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true, 
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "lib": ["es6", "dom"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "rootDir": "src",
+    "sourceMap": true,
+    "strict": true,
+    "target": "es5",
+    "baseUrl": ".",
+    "paths": {   // 使ts识别webpack中alias配置的路径
+      "@/*": ["src/*"],
+      // "@/api": ["src/api/index.ts"],
+      "components": ["src/components/index.ts"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src/assets/"
+  ]
+}
